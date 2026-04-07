@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    background: #f8fafc;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    margin: 0;
+}
+
+/* NAV */
+.nav {
+    margin-top: 10px;
+}
+
+.nav-link {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #555;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #2563eb;
+    text-shadow: 0 0 8px #2563eb;
+}
+
+/* DARK BUTTON */
+.mode-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 30px auto;
+    width: 85%;
+    border-radius: 12px;
+}
+
+/* CONTAINER */
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* CARDS */
+.card {
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #2563eb;
+}
+
+/* BUTTON */
+.btn {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* FORM */
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #020617;
+    color: white;
+}
+
+/* DARK MODE */
+.dark-mode {
+    background: #020617;
+}
+
+.dark-mode .header {
+    background: #020617;
+    color: white;
+}
+
+.dark-mode .card {
+    background: #111827;
+    color: white;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Projects</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1 class="logo">Sunny Portfolio</h1>
+
+    <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <button onclick="toggleMode()" class="mode-btn">🌙</button>
+</header>
+
+<section class="container">
+
+    <div class="card">
+        <h2>🌐 Portfolio Website</h2>
+        <p>Built using HTML & CSS</p>
+        <a href="https://konetisannihith4.github.io/portfolio/" class="btn">Live</a>
+    </div>
+
+    <div class="card">
+        <h2>⚙ CI/CD Pipeline</h2>
+        <p>Deployed using GitHub Pages</p>
+    </div>
+
+    <div class="card">
+        <h2>🐳 Docker Deployment</h2>
+        <p>Containerized using Docker</p>
+    </div>
+
+</section>
+
+<footer>© 2026 Sunny</footer>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>

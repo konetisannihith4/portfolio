@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1 class="logo">Sunny Portfolio</h1>
+
+    <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <button onclick="toggleMode()" class="mode-btn">🌙</button>
+</header>
+
+<section class="hero">
+    <h2>👨‍💻 Hi, I'm Sunny</h2>
+    <p>Web Developer & DevOps Learner</p>
+    <a href="contact.html" class="btn">Hire Me</a>
+</section>
+
+<section class="container">
+
+    <div class="card">
+        <h2>🚀 What I Do</h2>
+        <p>I build websites and learn DevOps.</p>
+    </div>
+
+    <div class="card">
+        <h2>🔥 Highlights</h2>
+        <ul>
+            <li>Portfolio Website</li>
+            <li>CI/CD Pipeline</li>
+            <li>Docker Deployment</li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>© 2026 Sunny</footer>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
