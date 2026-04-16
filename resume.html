@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* PRINT FIX */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    header, footer, canvas, .download-btn {
+        display: none;
+    }
+
+    .resume-box {
+        border: none;
+        box-shadow: none;
+        background: white;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<header>
+<h1>Sunny Portfolio</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="gallery.html">Gallery</a>
+<a href="skills.html">Skills</a>
+<a href="certificates.html">Certificates</a>
+<a href="blog.html">Blog</a>
+<a href="resume.html" class="active">Resume</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section>
+
+<h2>📄 Resume</h2>
+
+<!-- ✅ PRINT / DOWNLOAD BUTTON -->
+<button onclick="downloadResume()" class="download-btn">
+⬇ Download Resume
+</button>
+
+<div class="resume-box">
+
+<h3>Personal Details</h3>
+<ul>
+<li><b>Name:</b> Sunny Kumar</li>
+<li><b>Email:</b> your@email.com</li>
+<li><b>Phone:</b> +91 9876543210</li>
+<li><b>Location:</b> Andhra Pradesh, India</li>
+</ul>
+
+<h3>Career Objective</h3>
+<p>To obtain a challenging position where I can use my skills and grow.</p>
+
+<h3>Education</h3>
+<ul>
+<li>B.Tech – 2026</li>
+<li>Intermediate – 2022</li>
+<li>SSC – 2020</li>
+</ul>
+
+<h3>Skills</h3>
+<ul>
+<li>HTML, CSS, JS</li>
+<li>Python</li>
+<li>Git</li>
+</ul>
+
+</div>
+
+</section>
+
+<footer>© 2026 Sunny</footer>
+
+<script>
+function downloadResume() {
+    window.print();   // 🔥 THIS IS THE BEST METHOD
+}
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

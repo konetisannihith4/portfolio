@@ -1,56 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
 <title>About</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<canvas id="bg"></canvas>
 
-<header class="header">
-    <h1 class="logo">Sunny Portfolio</h1>
-
-    <nav class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link active">About</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
-
-    <button onclick="toggleMode()" class="mode-btn">🌙</button>
+<header>
+<h1>Sunny Portfolio</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="gallery.html">Gallery</a>
+<a href="skills.html">Skills</a>
+<a href="certificates.html">Certificates</a>
+<a href="blog.html">Blog</a>
+<a href="resume.html">Resume</a>
+<a href="about.html" class="active">About</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 
-<section class="container">
-
-    <div class="card">
-        <h2>👨‍💻 About Me</h2>
-        <p>I am a passionate student learning Web Development and DevOps.</p>
-    </div>
-
-    <div class="card">
-        <h2>🎓 Education</h2>
-        <p>B.Tech Computer Science(AIML) (2024 - 2028)</p>
-    </div>
-
-    <div class="card">
-        <h2>💡 Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </div>
-
+<section>
+<h2>👤 About Me</h2>
+<div class="card-container">
+<div class="card">
+I am Sunny 🚀<br><br>
+Web Developer & DevOps learner.<br>
+I love cyberpunk UI design.
+</div>
+</div>
 </section>
 
 <footer>© 2026 Sunny</footer>
-
-<script>
-function toggleMode() {
-    document.body.classList.toggle("dark-mode");
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>

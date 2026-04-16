@@ -1,57 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Home</title>
+<title>Sunny Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
-<header class="header">
-    <h1 class="logo">Sunny Portfolio</h1>
+<canvas id="bg"></canvas>
 
-    <nav class="nav">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
+<header>
+<h1>Sunny Portfolio</h1>
 
-    <button onclick="toggleMode()" class="mode-btn">🌙</button>
+<nav>
+<a href="index.html" class="active">Home</a>
+<a href="projects.html">Projects</a>
+<a href="gallery.html">Gallery</a>
+<a href="skills.html">Skills</a>
+<a href="certificates.html">Certificates</a>
+<a href="blog.html">Blog</a>
+<a href="resume.html">Resume</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
 </header>
 
-<section class="hero">
-    <h2>👨‍💻 Hi, I'm Sunny</h2>
-    <p>Web Developer & DevOps Learner</p>
-    <a href="contact.html" class="btn">Hire Me</a>
-</section>
+<section>
 
-<section class="container">
+<h2>👨‍💻 Home</h2>
+
+<div class="card-container">
 
     <div class="card">
-        <h2>🚀 What I Do</h2>
-        <p>I build websites and learn DevOps.</p>
+        <img src="image.png" class="profile">
+        <h3>Hi, I'm Sunny 👋</h3>
+        <p>Web Developer | DevOps Learner</p>
     </div>
 
     <div class="card">
-        <h2>🔥 Highlights</h2>
-        <ul>
-            <li>Portfolio Website</li>
-            <li>CI/CD Pipeline</li>
-            <li>Docker Deployment</li>
-        </ul>
+        <h3>Skills</h3>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>Docker</p>
+        <p>Git</p>
     </div>
 
+    <div class="card">
+        <h3>Info</h3>
+        <p>📍 India</p>
+        <p>💡 Web + DevOps</p>
+        <p>📧 your@email.com</p>
+    </div>
+
+</div>
+
 </section>
+
+<!-- 🔥 FLOATING SOCIAL ICONS -->
+<div class="social-bar">
+    <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+    <a href="#" class="icon github"><i class="fab fa-github"></i></a>
+    <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+</div>
 
 <footer>© 2026 Sunny</footer>
 
-<script>
-function toggleMode() {
-    document.body.classList.toggle("dark-mode");
-}
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

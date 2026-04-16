@@ -1,119 +1,310 @@
+/* RESET */
 body {
     margin: 0;
-    font-family: Arial;
-    background: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+/* BACKGROUND CANVAS */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /* HEADER */
-.header {
-    text-align: center;
-    background: #f8fafc;
+header {
     padding: 20px;
-    position: relative;
 }
 
-.logo {
-    margin: 0;
+header h1 {
+    color: cyan;
+    text-shadow: 0 0 20px cyan;
 }
 
-/* NAV */
-.nav {
+/* NAVBAR */
+nav {
     margin-top: 10px;
 }
 
-.nav-link {
-    margin: 0 12px;
+nav a {
+    color: white;
+    margin: 10px;
     text-decoration: none;
-    color: #555;
-}
-
-.nav-link.active,
-.nav-link:hover {
-    color: #2563eb;
-    text-shadow: 0 0 8px #2563eb;
-}
-
-/* DARK BUTTON */
-.mode-btn {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    background: black;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-/* HERO */
-.hero {
-    background: linear-gradient(135deg, #2563eb, #1e40af);
-    color: white;
-    text-align: center;
-    padding: 50px;
-    margin: 30px auto;
-    width: 85%;
-    border-radius: 12px;
-}
-
-/* CONTAINER */
-.container {
-    width: 85%;
-    margin: auto;
-}
-
-/* CARDS */
-.card {
-    background: #f1f5f9;
-    padding: 20px;
-    border-radius: 12px;
-    margin: 20px 0;
     transition: 0.3s;
 }
 
+nav a:hover {
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+}
+
+/* SECTION */
+section {
+    padding: 60px 20px;
+}
+
+/* CARD CONTAINER */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* CARD */
+.card {
+    background: rgba(0,255,255,0.05);
+    border: 1px solid cyan;
+    padding: 25px;
+    border-radius: 12px;
+    width: 250px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* CARD HOVER */
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px #2563eb;
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px cyan;
+}
+
+/* PROFILE IMAGE */
+.profile {
+    width: 140px;
+    height: 140px;
+
+    border-radius: 10px;   /* square with slight curve */
+    border: 3px solid cyan;
+
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px cyan;
+
+    object-fit: cover;
+}
+}
+
+/* HEADINGS */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* TEXT */
+p {
+    color: #ccc;
+}
+
+/* FORM INPUTS */
+input, textarea {
+    width: 280px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
 }
 
 /* BUTTON */
-.btn {
+button {
     padding: 10px 20px;
-    background: black;
-    color: white;
-    border-radius: 20px;
-    text-decoration: none;
+    background: transparent;
+    border: 1px solid cyan;
+    color: cyan;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-/* FORM */
-input, textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+button:hover {
+    background: cyan;
+    color: black;
+}
+
+/* 🔥 BOTTOM SOCIAL BAR (SMALL + SMOOTH) */
+.social-bar {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    gap: 15px;
+
+    padding: 8px 15px;
+    border-radius: 25px;
+
+    background: rgba(0, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 0 10px cyan;
+
+    z-index: 1000;
+}
+
+/* ICON STYLE (SMALLER) */
+.social-bar .icon {
+    width: 40px;      /* reduced */
+    height: 40px;
+    font-size: 16px;  /* reduced */
+
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    border: 1px solid cyan;
+
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.social-bar .icon:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 0 15px cyan;
+}
+
+/* BRAND COLORS */
+.instagram:hover { color: #ff00cc; }
+.linkedin:hover { color: #0077b5; }
+.github:hover { color: #ffffff; }
+.twitter:hover { color: #1da1f2; }
+
+/* FLOAT ANIMATION */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
 }
 
 /* FOOTER */
 footer {
-    text-align: center;
-    padding: 15px;
-    background: #020617;
-    color: white;
+    margin-top: 40px;
+    padding: 20px;
+}
+/* ========================= */
+/* 🔥 UPGRADED NAVBAR */
+/* ========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.4);
+
+    border-bottom: 1px solid rgba(0,255,255,0.2);
 }
 
-/* DARK MODE */
-.dark-mode {
-    background: #020617;
+/* NAV LINKS */
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.dark-mode .header {
-    background: #020617;
-    color: white;
+/* LINK STYLE */
+nav a {
+    position: relative;
+    padding: 8px 12px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
 }
 
-.dark-mode .card {
-    background: #111827;
-    color: white;
+/* HOVER GLOW */
+nav a:hover {
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+}
+
+/* 🔥 ANIMATED UNDERLINE */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+    height: 2px;
+
+    background: cyan;
+    box-shadow: 0 0 10px cyan;
+
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ✅ ACTIVE PAGE LINK */
+nav a.active {
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+}
+
+nav a.active::after {
+    width: 100%;
+}
+/* ========================= */
+/* RESUME STYLE */
+/* ========================= */
+
+.resume-box {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+
+    background: rgba(0,255,255,0.05);
+    border: 1px solid cyan;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 0 15px rgba(0,255,255,0.2);
+}
+
+.resume-box h3 {
+    border-bottom: 1px solid cyan;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    color: cyan;
+}
+
+.resume-box ul {
+    padding-left: 20px;
+}
+
+.resume-box li {
+    margin: 8px 0;
+}
+
+.resume-box p {
+    color: #ccc;
+}
+/* DOWNLOAD BUTTON */
+.download-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+
+    color: cyan;
+    border: 1px solid cyan;
+    border-radius: 5px;
+
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: cyan;
+    color: black;
+    box-shadow: 0 0 15px cyan;
 }
